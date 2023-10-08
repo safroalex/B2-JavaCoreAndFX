@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/safroalex/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/resources/mops.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/resources/zapusk.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/root/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/AngelStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/MoveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/RockerStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/SadManStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AnnotatedClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AntdClassForUIWithNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AntdClassForUIWoutNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/Repeat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task3/Task3Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task3/Task3UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task4/Task4Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task4/Task4UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5Logic/Methods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task6/Task6Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task6/Task6UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/ui/MainWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/utils/AudioThreadStart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2WUP1DWVxd6SR7VziLWDTCyC05H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="org.safroalex.root.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.safroalex.root.App" />
+      <module name="JavaCoreAndFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.safroalex.root.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.org.safroalex.root.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="" />
+      <created>1696783970045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696783970045</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
