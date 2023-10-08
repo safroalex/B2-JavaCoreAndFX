@@ -1,20 +1,19 @@
 package org.safroalex.utils;
 
-import javax.sound.sampled.*;
-import java.io.IOException;
-import java.util.Objects;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import java.nio.file.Paths;
 
 public class AudioThreadStart implements Runnable {
     @Override
     public void run() {
         try {
-            AudioInputStream audioIn = AudioSystem.getAudioInputStream(Objects.requireNonNull(getClass().getClassLoader().getResource("zapusk.wav")));
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioIn);
-            clip.start();
-        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            String s = Paths.get(getClass().getClassLoader().getResource("zapusk.wav").toURI()).toAbsolutePath().toString();
+            Media hit = new Media(Paths.get(s).toUri().toString());
+            MediaPlayer mediaPlayer = new MediaPlayer(hit);
+            mediaPlayer.play();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
-

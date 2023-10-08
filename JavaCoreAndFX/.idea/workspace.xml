@@ -5,51 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/safroalex/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/resources/mops.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/resources/zapusk.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/root/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/AngelStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/Hero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/MoveStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/RockerStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Logic/SadManStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task1/Task1UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AnnotatedClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AntdClassForUIWithNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/AntdClassForUIWoutNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Logic/Repeat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task2/Task2UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task3/Task3Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task3/Task3UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task4/Task4Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task4/Task4UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5Logic/Methods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task5/Task5UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task6/Task6Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/tasks/task6/Task6UI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/ui/MainWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/src/utils/AudioThreadStart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WhereIsYourLove/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/root/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/root/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/utils/AudioThreadStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/utils/AudioThreadStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
