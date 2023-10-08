@@ -15,14 +15,17 @@ This repository serves as a portfolio of projects implemented in Java. It covers
 - Java
 - JavaFX
 - Multithreading
+- Maven
 
 ## Installation and Setup
 
 To run most of the projects, you will need:
 
-- JDK 20
+- JDK 17
 - JavaFX SDK 21
 - An IDE that supports Java, such as IntelliJ IDEA or Eclipse
+
+Maven will help you.
 
 ```bash
 # Clone the repository
