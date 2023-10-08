@@ -32,6 +32,7 @@ git clone https://github.com/yourusername/JavaCoreAndFXPortfolio.git
 cd JavaCoreAndFXPortfolio
 
 # Run the project using your IDE or the command line
+```
 
 ## License
 
