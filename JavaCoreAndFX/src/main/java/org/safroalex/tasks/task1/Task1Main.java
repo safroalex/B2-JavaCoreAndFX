@@ -35,7 +35,9 @@ public class Task1Main {
 
         String continueMoving = "y";
         while (continueMoving.equalsIgnoreCase("y")) {
-            double x = 0, y = 0, z = 0;
+            double x = 0;
+            double y = 0;
+            double z = 0;
             try {
                 // Получить координаты для перемещения
                 System.out.println("Enter x coordinate: ");
