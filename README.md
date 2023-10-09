@@ -17,9 +17,11 @@ This repository serves as a portfolio of projects implemented in Java. It covers
 ## Technologies
 
 - Java
-- JavaFX
 - Multithreading
 - Maven
+- JavaFX
+- Javadoc
+- Jupiter
 
 ## Installation and Setup
 
