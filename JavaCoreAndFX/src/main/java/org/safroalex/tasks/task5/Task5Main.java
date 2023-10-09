@@ -1,6 +1,6 @@
 package org.safroalex.tasks.task5;
 
-import org.safroalex.tasks.task5.Task5Logic.Methods;
+import org.safroalex.tasks.task5.logic.Methods;
 
 import java.util.Arrays;
 import java.util.List;

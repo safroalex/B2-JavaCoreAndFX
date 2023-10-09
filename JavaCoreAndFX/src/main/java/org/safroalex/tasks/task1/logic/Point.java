@@ -1,4 +1,4 @@
-package org.safroalex.tasks.task1.Task1Logic;
+package org.safroalex.tasks.task1.logic;
 
 import java.lang.Math;
 

@@ -2,7 +2,7 @@ package org.safroalex.tasks.task5;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
-import org.safroalex.tasks.task5.Task5Logic.Methods;
+import org.safroalex.tasks.task5.logic.Methods;
 import org.safroalex.ui.MainWindow;
 
 import java.util.Arrays;

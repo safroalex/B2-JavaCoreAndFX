@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/AngelStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/AngelStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/MoveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/MoveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/RockerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/RockerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Logic/SadManStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/SadManStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Logic/AnnotatedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/logic/AnnotatedClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Logic/AntdClassForUIWithNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/logic/AntdClassForUIWithNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Logic/AntdClassForUIWoutNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/logic/AntdClassForUIWoutNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Logic/Repeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/logic/Repeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5Logic/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/logic/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

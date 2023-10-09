@@ -1,4 +1,4 @@
-package org.safroalex.tasks.task1.Task1Logic;
+package org.safroalex.tasks.task1.logic;
 
 public class AngelStrategy implements MoveStrategy {
     private static final int ERROR_HIGH_ALTITUDE = 1;

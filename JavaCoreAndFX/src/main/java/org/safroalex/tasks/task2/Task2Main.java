@@ -1,7 +1,7 @@
 package org.safroalex.tasks.task2;
 
 import java.lang.reflect.Method;
-import org.safroalex.tasks.task2.Task2Logic.*;
+import org.safroalex.tasks.task2.logic.*;
 public class Task2Main {
 
     public static void main(String[] args) {

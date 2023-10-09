@@ -1,6 +1,6 @@
 package org.safroalex.tasks.task1;
 
-import org.safroalex.tasks.task1.Task1Logic.*;
+import org.safroalex.tasks.task1.logic.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

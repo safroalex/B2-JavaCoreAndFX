@@ -1,4 +1,4 @@
-package org.safroalex.tasks.task5.Task5Logic;
+package org.safroalex.tasks.task5.logic;
 
 import java.util.*;
 import java.util.stream.Collectors;

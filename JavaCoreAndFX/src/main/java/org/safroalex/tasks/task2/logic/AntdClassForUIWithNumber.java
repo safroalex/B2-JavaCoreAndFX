@@ -1,4 +1,4 @@
-package org.safroalex.tasks.task2.Task2Logic;
+package org.safroalex.tasks.task2.logic;
 
 public class AntdClassForUIWithNumber {
 
