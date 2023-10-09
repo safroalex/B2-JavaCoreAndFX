@@ -1,0 +1,7 @@
+hello=здравствуйте
+hi=привет
+how are you=как дела
+how=как
+are you=ты
+you=вы
+world=мир
