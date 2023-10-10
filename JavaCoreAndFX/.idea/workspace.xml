@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/TextTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/exceptions/FileReadException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/exceptions/FileWriteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/exceptions/InvalidFileFormatException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/files/dictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/files/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/safroalex/tasks/task4/TextTranslatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/safroalex/AppTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
