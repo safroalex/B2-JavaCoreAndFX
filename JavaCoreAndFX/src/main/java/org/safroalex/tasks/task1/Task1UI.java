@@ -57,8 +57,10 @@ public class Task1UI {
         moveButton.setTextFill(Color.WHITE);
         moveButton.setStyle("-fx-background-color: #4CAF50;");
         moveButton.setOnAction(e -> {
-            if (strategyComboBox.getValue() == null || strategyComboBox.getValue().isEmpty()) {
-                outputArea.appendText("Пожалуйста, выберите тип перемещения.\n");
+            if (strategyComboBox.getValue() == null
+                    || strategyComboBox.getValue().isEmpty()) {
+                outputArea.appendText("Пожалуйста," +
+                        " выберите тип перемещения.\n");
                 return;
             }
             String[] coords = coordinatesField.getText().split(",");
@@ -74,13 +76,16 @@ public class Task1UI {
 
                     String moveResult = hero.move(newPoint);
                     outputArea.appendText(moveResult + "\n");
-                    outputArea.appendText("Current position: " + hero.getPosition().getCoordinatesMessage() + "\n");
+                    outputArea.appendText("Current position: "
+                            + hero.getPosition().getCoordinatesMessage() + "\n");
 
                 } catch (NumberFormatException ex) {
-                    outputArea.appendText("Invalid input. Please enter valid coordinates.\n");
+                    outputArea.appendText("Invalid input." +
+                            " Please enter valid coordinates.\n");
                 }
             } else {
-                outputArea.appendText("Please enter all three coordinates (x, y, z).\n");
+                outputArea.appendText(
+                        "Please enter all three coordinates (x, y, z).\n");
             }
         });
 
@@ -94,7 +99,8 @@ public class Task1UI {
         BorderPane.setMargin(backButton, new Insets(12, 12, 12, 12));
 
         // Добавляем все элементы в VBox
-        vBox.getChildren().addAll(outputArea, strategyComboBox, coordinatesField, moveButton);
+        vBox.getChildren().addAll(outputArea,
+                strategyComboBox, coordinatesField, moveButton);
 
         // Устанавливаем VBox в центре и кнопку в нижнем левом углу
         borderPane.setCenter(vBox);

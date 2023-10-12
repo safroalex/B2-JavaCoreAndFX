@@ -30,20 +30,28 @@ public class Task2UI {
         Button executeButton = new Button("Execute");
         executeButton.setOnAction(e -> {
             if (repeatComboBox.getValue() == null) {
-                outputArea.appendText("Please select a number of repetitions.\n");
+                outputArea.appendText(
+                        "Please select a number of repetitions.\n");
             } else {
-                executeAnnotatedMethods(Integer.parseInt(repeatComboBox.getValue()));
+                executeAnnotatedMethods(
+                        Integer.parseInt(repeatComboBox.getValue()));
             }
         });
 
-        Button executeButtonWithDefaults = new Button("Execute with Defaults in Area 2");
-        executeButtonWithDefaults.setOnAction(e -> executeAnnotatedMethodsWithDefaults(outputArea2, AntdClassForUIWithNumber.class));
+        Button executeButtonWithDefaults
+                = new Button("Execute with Defaults in Area 2");
+        executeButtonWithDefaults.setOnAction(e
+                -> executeAnnotatedMethodsWithDefaults(
+                        outputArea2, AntdClassForUIWithNumber.class));
 
         // Кнопка для возврата в главное меню
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
-        vBox.getChildren().addAll(outputArea, new Label("Select number of repetitions:"), repeatComboBox, executeButton, outputArea2, executeButtonWithDefaults, backButton);
+        vBox.getChildren().addAll(outputArea,
+                new Label("Select number of repetitions:"),
+                repeatComboBox, executeButton, outputArea2,
+                executeButtonWithDefaults, backButton);
 
         return vBox;
     }
@@ -99,7 +107,8 @@ public class Task2UI {
                 for (int i = 0; i < times; i++) {
                     try {
                         Object output;
-                        // Вызов методов по условиям с использованием Reflection API для сравнения типов параметров
+                        // Вызов методов по условиям с использованием
+                        // Reflection API для сравнения типов параметров
                         Class<?>[] paramTypes = method.getParameterTypes();
                         if (paramTypes.length > 0) {
                             if (paramTypes[0] == int.class) {

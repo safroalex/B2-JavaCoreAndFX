@@ -13,7 +13,9 @@ public class RockerStrategy implements MoveStrategy {
         double altitudeDifference = b.getZ() - a.getZ();
 
         // Рассчитываем расстояние для ходьбы на плоскости xy
-        double walkDistance = Point.getDistance(new Point(a.getX(), a.getY(), 0), new Point(b.getX(), b.getY(), 0));
+        double walkDistance = Point.getDistance(
+                new Point(a.getX(), a.getY(), 0)
+                , new Point(b.getX(), b.getY(), 0));
 
         // Проверяем, можем ли мы лететь так высоко
         if (altitudeDifference > MAX_ALTITUDE) {

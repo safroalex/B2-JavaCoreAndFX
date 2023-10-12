@@ -14,7 +14,9 @@ public class Point {
     }
 
     public static double getDistance(Point A, Point B) {
-        return Math.sqrt(Math.pow(A.getX() - B.getX(), 2) + Math.pow(A.getY() - B.getY(), 2) + Math.pow(A.getZ() - B.getZ(), 2));
+        return Math.sqrt(Math.pow(A.getX() - B.getX(), 2)
+                + Math.pow(A.getY() - B.getY(), 2)
+                + Math.pow(A.getZ() - B.getZ(), 2));
     }
 
     public String getCoordinatesMessage() {

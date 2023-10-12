@@ -12,7 +12,8 @@ public class Utils {
     public static Map<String, String> readDictionary(String filepath)
             throws FileReadException, InvalidFileFormatException {
         Map<String, String> dictionary = new HashMap<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
+        try (BufferedReader br
+                     = new BufferedReader(new FileReader(filepath))) {
             String line;
             while((line = br.readLine()) != null) {
                 String[] parts = line.split("\\|");
@@ -50,7 +51,8 @@ public class Utils {
         return text.toString();
     }
 
-    public static Map<String, String> parseManualDictionary(String input) throws InvalidFileFormatException {
+    public static Map<String, String> parseManualDictionary(String input)
+            throws InvalidFileFormatException {
         Map<String, String> dictionary = new HashMap<>();
         String[] lines = input.split("\\n");
         for (String line : lines) {

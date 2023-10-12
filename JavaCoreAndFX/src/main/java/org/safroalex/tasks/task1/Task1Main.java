@@ -10,18 +10,26 @@ public class Task1Main {
         Scanner scanner = new Scanner(System.in);
 
         // Вывести предупреждения о разных типах перемещения
-        System.out.println("Movement types and their restrictions:");
-        System.out.println("Angel: Can fly but not too high, cannot walk, cannot dig.");
-        System.out.println("Rocker: Can walk but not too far, can fly but not too high, cannot dig.");
-        System.out.println("SadMan: Cannot walk, cannot fly, can dig infinitely.");
+        System.out.println(
+                "Movement types and their restrictions:");
+        System.out.println(
+                "Angel: Can fly but not too high, cannot walk, cannot dig.");
+        System.out.println(
+                "Rocker: Can walk but not too far," +
+                        " can fly but not too high, cannot dig.");
+        System.out.println("SadMan: Cannot walk," +
+                " cannot fly, can dig infinitely.");
 
         // Создать Hero с выбранным типом движения
         String moveType = "";
         while (true) {
-            System.out.println("Enter movement type (Angel, Rocker, SadMan): ");
+            System.out.println("Enter movement type " +
+                    "(Angel, Rocker, SadMan): ");
             try {
                 moveType = scanner.nextLine();
-                if (moveType.equalsIgnoreCase("Angel") || moveType.equalsIgnoreCase("Rocker") || moveType.equalsIgnoreCase("SadMan")) {
+                if (moveType.equalsIgnoreCase("Angel")
+                        || moveType.equalsIgnoreCase("Rocker")
+                        || moveType.equalsIgnoreCase("SadMan")) {
                     break;
                 } else {
                     System.out.println("Invalid type. Try again.");
