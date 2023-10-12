@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/RockerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/RockerStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/SadManStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/SadManStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -30,7 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -59,7 +57,7 @@
       <recent name="org.safroalex.tasks.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task1Main">
+  <component name="RunManager" selected="Application.Task6Main">
     <configuration name="Task1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.Task1Main" />
       <module name="JavaCoreAndFX" />
@@ -112,28 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task6Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task6.Task6Main" />
       <module name="JavaCoreAndFX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.safroalex.tasks.task4.*" />
+          <option name="PATTERN" value="org.safroalex.tasks.task6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.safroalex.tasks.task4" />
-      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task4.TextTranslatorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task6Main" />
         <item itemvalue="Application.Task1Main" />
         <item itemvalue="Application.Task2Main" />
         <item itemvalue="Application.Task3Main" />
         <item itemvalue="Application.Task4Main" />
-        <item itemvalue="JUnit.TextTranslatorTest" />
       </list>
     </recent_temporary>
   </component>
