@@ -23,9 +23,9 @@ public class Process {
                         //System.out.println("Демон: Состояние программы сейчас " + state.toString());
                         state = State.values()[new Random().nextInt(State.values().length)];
                         if (state.equals(State.RUNNING)) {
-                            System.out.println("Демон: Программе повезло и состояние осталось RUNNING");
+                            System.out.println("Демон:  Состояние не изменилось - RUNNING");
                         } else {
-                            System.out.println("Демон: Я изменил состояние программы на: " + state.toString());
+                            System.out.println("Демон: Состояине изменилось на: " + state.toString());
                         }
                         mutex.notify();
                     }
@@ -33,7 +33,7 @@ public class Process {
             });
             daemon.setDaemon(true);
             daemon.start();
-            System.out.println("Абстрактная программа: я заработала и запустила демона!");
+            System.out.println("Абстрактная программа: Запуск инициализирован, демон запущен.");
 
             while (!Thread.currentThread().isInterrupted()) {
                 someWork();
@@ -50,7 +50,10 @@ public class Process {
 
         @Override
         public void run() {
-            System.out.println("Супервизор: я встал!");
+            System.out.println("Супервизор: Запуск инициализирован.");
+            if (abstractProgram.getState() == Thread.State.TERMINATED) {
+                abstractProgram = new Thread(new AbstractProgram());
+            }
             abstractProgram.start();
             while (!abstractProgram.isInterrupted()) {
                 synchronized (mutex) {
@@ -62,7 +65,7 @@ public class Process {
                     switch (state) {
                         case FATAL_ERROR -> stopProgram();
                         case UNKNOWN, STOPPING -> runProgram();
-                        default -> System.out.println("Супервизор: Я ничего не сделал)");
+                        default -> System.out.println("Супервизор: Наблюдаю.");
                     }
                 }
             }
@@ -70,12 +73,12 @@ public class Process {
 
         private void runProgram() {
             state = State.RUNNING;
-            System.out.println("Супервизор: Я перезапустил программу");
+            System.out.println("Супервизор: Перезапуск программы.");
         }
 
         private void stopProgram() {
             abstractProgram.interrupt();
-            System.out.println("Супервизор: Я остановил программу");
+            System.out.println("Супервизор: Остановка программы.");
         }
     }
 

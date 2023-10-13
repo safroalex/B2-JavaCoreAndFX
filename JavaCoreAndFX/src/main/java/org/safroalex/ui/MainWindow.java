@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 
 import org.safroalex.tasks.task3.Task3UI;
+import org.safroalex.tasks.task6.Task6UI;
 import org.safroalex.utils.AudioThreadStart;
 import org.safroalex.tasks.task1.Task1UI;
 import org.safroalex.tasks.task2.Task2UI;
@@ -29,7 +30,8 @@ public class MainWindow {
         MenuItem task3 = new MenuItem("Лабораторная 3");
         MenuItem task4 = new MenuItem("Лабораторная 4");
         MenuItem task5 = new MenuItem("Лабораторная 5");
-        tasksMenu.getItems().addAll(task1, task2, task3, task4, task5);
+        MenuItem task6 = new MenuItem("Лабораторная 6");
+        tasksMenu.getItems().addAll(task1, task2, task3, task4, task5, task6);
         menuBar.getMenus().add(tasksMenu);
 
         // Обработчики событий для меню
@@ -38,6 +40,7 @@ public class MainWindow {
         task3.setOnAction(e -> showTask3UI());
         task4.setOnAction(e -> showTask4UI());
         task5.setOnAction(e -> showTask5UI());
+        task6.setOnAction(e -> showTask6UI());
 
         currentVBox.getChildren().setAll(menuBar);
     }
@@ -94,6 +97,12 @@ public class MainWindow {
         VBox task5VBox = task5UI.initialize();  // Инициализируем его
         // Заменяем текущий интерфейс на интерфейс задания 5
         currentVBox.getChildren().setAll(task5VBox.getChildren());
+    }
+
+    private void showTask6UI() {
+        Task6UI task6UI = new Task6UI(this);
+        VBox task6VBox = task6UI.initialize();
+        currentVBox.getChildren().setAll(task6VBox.getChildren());
     }
 
     public void showMainMenu() {
