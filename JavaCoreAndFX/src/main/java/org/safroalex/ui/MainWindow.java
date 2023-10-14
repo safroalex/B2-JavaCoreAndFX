@@ -1,11 +1,15 @@
 package org.safroalex.ui;
 
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 
@@ -19,9 +23,22 @@ import org.safroalex.tasks.task5.Task5UI;
 
 public class MainWindow {
 
+    // Создаем BorderPane как основной макет
+    BorderPane mainLayout = new BorderPane();
+    private Label polytechLabel;
+    private VBox menu;
+
+    public MainWindow() {
+        polytechLabel = new Label("POLYTECH");
+        polytechLabel.setFont(new Font("Verdana", 100));
+        polytechLabel.setTextFill(Color.WHITE);
+        mainLayout.setCenter(polytechLabel); // Устанавливаем по умолчанию
+    }
     private void initializeMainMenu() {
         // Создание меню
         MenuBar menuBar = new MenuBar();
+
+        menuBar.setStyle("-fx-background-color: #8C86AA;");
 
         // Меню для лабораторных работ
         Menu tasksMenu = new Menu("Лабораторные");
@@ -42,25 +59,26 @@ public class MainWindow {
         task5.setOnAction(e -> showTask5UI());
         task6.setOnAction(e -> showTask6UI());
 
-        currentVBox.getChildren().setAll(menuBar);
+        menu.getChildren().setAll(menuBar);
     }
 
-    private VBox currentVBox;  // Текущий интерфейс в окне
-
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Лабораторные работы");
+        menu = new VBox();
 
-        // Инициализация currentVBox
-        currentVBox = new VBox();
-
-        // Запуск аудио в новом потоке
         Thread audioThread = new Thread(new AudioThreadStart());
         audioThread.start();
 
         initializeMainMenu();
 
-        // Размещение меню в окне
-        Scene scene = new Scene(currentVBox, 800, 600);
+        mainLayout.setTop(menu);
+        mainLayout.setCenter(polytechLabel);
+
+
+        menu.setAlignment(Pos.TOP_CENTER);
+        BorderPane.setAlignment(polytechLabel, Pos.CENTER);
+
+        Scene scene = new Scene(mainLayout, 800, 600);
+        mainLayout.setStyle("-fx-background-color: black;");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -68,45 +86,47 @@ public class MainWindow {
     private void showTask1UI() {
         Task1UI task1UI = new Task1UI(this);
         BorderPane task1VBox = task1UI.initialize();
-        // Заменяем текущий интерфейс на интерфейс задания 1
-        currentVBox.getChildren().setAll(task1VBox.getChildren());
+        mainLayout.setCenter(task1VBox);
+
     }
 
     private void showTask2UI() {
-        Task2UI task2UI = new Task2UI(this);  // Создаем новый объект Task2UI
-        VBox task2VBox = task2UI.initialize();  // Инициализируем его
-        // Заменяем текущий интерфейс на интерфейс задания 2
-        currentVBox.getChildren().setAll(task2VBox.getChildren());
+        Task2UI task2UI = new Task2UI(this);
+        VBox task2VBox = task2UI.initialize();
+        mainLayout.setCenter(task2VBox);
+
     }
 
     private void showTask3UI() {
-        Task3UI task3UI = new Task3UI(this);  // Создаем новый объект Task2UI
-        VBox task3VBox = task3UI.initialize();  // Инициализируем его
-        // Заменяем текущий интерфейс на интерфейс задания 2
-        currentVBox.getChildren().setAll(task3VBox.getChildren());
+        Task3UI task3UI = new Task3UI(this);
+        VBox task3VBox = task3UI.initialize();
+        mainLayout.setCenter(task3VBox);
+
     }
 
     private void showTask4UI() {
         Task4UI task4UI = new Task4UI(this);
         VBox task4VBox = task4UI.initialize();
-        currentVBox.getChildren().setAll(task4VBox.getChildren());
+        mainLayout.setCenter(task4VBox);
+
     }
 
     private void showTask5UI() {
-        Task5UI task5UI = new Task5UI(this);  // Создаем новый объект Task5UI
-        VBox task5VBox = task5UI.initialize();  // Инициализируем его
-        // Заменяем текущий интерфейс на интерфейс задания 5
-        currentVBox.getChildren().setAll(task5VBox.getChildren());
+        Task5UI task5UI = new Task5UI(this);
+        VBox task5VBox = task5UI.initialize();
+        mainLayout.setCenter(task5VBox);
+
     }
 
     private void showTask6UI() {
         Task6UI task6UI = new Task6UI(this);
-        VBox task6VBox = task6UI.initialize();
-        currentVBox.getChildren().setAll(task6VBox.getChildren());
+        BorderPane task6VBox = task6UI.initialize();
+        mainLayout.setCenter(task6VBox);
     }
 
     public void showMainMenu() {
         initializeMainMenu();
+        mainLayout.setCenter(polytechLabel);
     }
 
 }

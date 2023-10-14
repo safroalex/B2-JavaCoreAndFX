@@ -1,7 +1,12 @@
 package org.safroalex.tasks.task5;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task5.logic.Methods;
 import org.safroalex.ui.MainWindow;
 
@@ -11,7 +16,7 @@ import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 public class Task5UI {
-    private TextArea outputArea;
+    private TextArea outputArea = new TextArea();;
 
     private final MainWindow mainWindow;
 
@@ -19,13 +24,11 @@ public class Task5UI {
         this.mainWindow = mainWindow;
     }
     public VBox initialize() {
+        BorderPane borderPane = new BorderPane();
         VBox vBox = new VBox(10);
 
-        // Стилизация
-        vBox.setStyle("-fx-background-color: #f4f4f4;");
-        outputArea = new TextArea();
+
         outputArea.setEditable(false);
-        outputArea.setStyle("-fx-font-size: 14px;");
 
         TextField inputField1 = new TextField();
         Button executeButton1 = new Button("Execute Method 1");
@@ -172,14 +175,6 @@ public class Task5UI {
         Tooltip.install(inputField6, tooltip6);
         Tooltip.install(inputField7, tooltip7);
 
-        // Добавление разделителей
-        Separator separator1 = new Separator();
-        Separator separator2 = new Separator();
-        Separator separator3 = new Separator();
-        Separator separator4 = new Separator();
-        Separator separator5 = new Separator();
-        Separator separator6 = new Separator();
-        Separator separator7 = new Separator();
 
         // Создание контейнеров для каждой пары поля-кнопка
         VBox container1 = new VBox(inputField1, executeButton1);
@@ -191,34 +186,99 @@ public class Task5UI {
         VBox container7 = new VBox(inputField7, executeButton7);
 
         // Установка пространства между элементами в контейнерах
-        container1.setSpacing(10);
-        container2.setSpacing(10);
-        container3.setSpacing(10);
-        container4.setSpacing(10);
-        container5.setSpacing(10);
-        container6.setSpacing(10);
-        container7.setSpacing(10);
+        container1.setSpacing(20);
+        container2.setSpacing(20);
+        container3.setSpacing(20);
+        container4.setSpacing(20);
+        container5.setSpacing(20);
+        container6.setSpacing(20);
+        container7.setSpacing(20);
+
+
+        // STYLE
+        inputField1.setStyle("-fx-background-color: #C0C0C0;");
+        inputField2.setStyle("-fx-background-color: #C0C0C0;");
+        inputField3.setStyle("-fx-background-color: #C0C0C0;");
+        inputField4.setStyle("-fx-background-color: #C0C0C0;");
+        inputField4Letter.setStyle("-fx-background-color: #C0C0C0;");
+        inputField5.setStyle("-fx-background-color: #C0C0C0;");
+        inputField6.setStyle("-fx-background-color: #C0C0C0;");
+        inputField7.setStyle("-fx-background-color: #C0C0C0;");
+
+
+        executeButton1.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton1.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton1, Pos.BOTTOM_LEFT);
+
+        executeButton2.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton2.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton2, Pos.BOTTOM_LEFT);
+
+        executeButton3.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton3.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton3, Pos.BOTTOM_LEFT);
+
+        executeButton4.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton4.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton4, Pos.BOTTOM_LEFT);
+
+        executeButton5.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton5.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton5, Pos.BOTTOM_LEFT);
+
+        executeButton6.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton6.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton6, Pos.BOTTOM_LEFT);
+
+        executeButton6.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton6.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton6, Pos.BOTTOM_LEFT);
+
+        executeButton7.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton7.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton7, Pos.BOTTOM_LEFT);
+
+        backButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        backButton.setStyle("-fx-background-color: #3C91E6;");
+        BorderPane.setAlignment(backButton, Pos.BOTTOM_LEFT);
+
+        vBox.setStyle("-fx-background-color: #000000;");
+
+        outputArea.setStyle("-fx-control-inner-background:#000;"  +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        outputArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        outputArea.setMinHeight(300);
+        outputArea.setMinWidth(200);
+
+
 
         // Добавление контейнеров и сепараторов в основной VBox
         vBox.getChildren().addAll(
-                new Label("Input for Method 1 (integers):"), container1, separator1,
-                new Label("Input for Method 2 (strings):"), container2, separator2,
-                new Label("Input for Method 3 (integers):"), container3, separator3,
-                new Label("Input for Method 4 (strings):"), container4, separator4,
-                new Label("Input for Method 5 (integers):"), container5, separator5,
-                new Label("Input for Method 6 (integers):"), container6, separator6,
-                new Label("Input for Method 7 (strings):"), container7, separator7, backButton,
+                createCustomLabel("Method 1:", Color.WHITE), container1,
+                createCustomLabel("Method 2:", Color.WHITE), container2,
+                createCustomLabel("Method 3:", Color.WHITE), container3,
+                createCustomLabel("Method 4:", Color.WHITE), container4,
+                createCustomLabel("Method 5:", Color.WHITE), container5,
+                createCustomLabel("Method 6:", Color.WHITE), container6,
+                createCustomLabel("Method 7:", Color.WHITE), container7,  backButton,
                 outputArea
         );
 
-        // Создание ScrollPane и добавление вашего VBox в него
+        // Создание ScrollPane и добавление VBox в него
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setContent(vBox);
         scrollPane.setFitToWidth(true);  // Чтобы ширина VBox подстраивалась под ширину ScrollPane
 
-        // Создаем новый VBox, чтобы вернуть его как корневой элемент с прокруткой
-        VBox root = new VBox(scrollPane);  // Здесь можно добавить еще элементы, если нужно
 
-        return root;
+        VBox scrollVBox = new VBox(scrollPane);
+
+        return scrollVBox;
+    }
+
+    public Label createCustomLabel(String text, Color color) {
+        Label label = new Label(text);
+        label.setTextFill(color);
+        label.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        return label;
     }
 }

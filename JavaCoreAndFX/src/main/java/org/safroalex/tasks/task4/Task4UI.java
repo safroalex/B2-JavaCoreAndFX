@@ -122,6 +122,10 @@ public class Task4UI {
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
+        translatedTextArea.setStyle("-fx-control-inner-background:#000;" +
+                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+
         task4VBox.getChildren().addAll(manualDictionaryArea,
                 loadManualDictionaryButton, dictionaryArea,
                 inputTextLabel, englishTextArea,

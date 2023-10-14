@@ -20,8 +20,8 @@ public class Task3UI {
     public VBox initialize() {
         VBox vBox = new VBox();
 
-        TextArea textArea = new TextArea();
-        textArea.setEditable(false);
+        TextArea outputArea = new TextArea();
+        outputArea.setEditable(false);
 
         Button runButton = new Button("Запустить алгоритм");
         runButton.setOnAction(e -> {
@@ -41,9 +41,9 @@ public class Task3UI {
             Segregate mlsegregate = new Segregate();
             mlsegregate.segregate(mlecopit, mlezhovie, mlcoshki, mlpredator);
 
-            textArea.setText("Mlezhovie size: " + mlezhovie.size());
-            textArea.appendText("\n" + "Mlcoshki size: " + mlcoshki.size());
-            textArea.appendText("\n" + "Mlpredator size: " + mlpredator.size());
+            outputArea.setText("Mlezhovie size: " + mlezhovie.size());
+            outputArea.appendText("\n" + "Mlcoshki size: " + mlcoshki.size());
+            outputArea.appendText("\n" + "Mlpredator size: " + mlpredator.size());
 
 
             //SegregatePredator
@@ -60,9 +60,9 @@ public class Task3UI {
             Segregate prsegregate = new Segregate();
             prsegregate.segregate(predator, prchordate, prmanul, prcoshki);
 
-            textArea.appendText("\n" + "Prchordate size: " + prchordate.size());
-            textArea.appendText("\n" + "Prmanul size: " + prmanul.size());
-            textArea.appendText("\n" + "Prcoshki size: " + prcoshki.size());
+            outputArea.appendText("\n" + "Prchordate size: " + prchordate.size());
+            outputArea.appendText("\n" + "Prmanul size: " + prmanul.size());
+            outputArea.appendText("\n" + "Prcoshki size: " + prcoshki.size());
 
 
             //SegregateEzhovie
@@ -81,15 +81,19 @@ public class Task3UI {
             ezsegregate
                     .segregate(ezhovie, eznasecomoyadnye, ezpredator, ezpredator2);
 
-            textArea.appendText("\n" + "Eznasecomoyadnye size: " + eznasecomoyadnye.size());
-            textArea.appendText("\n" + "Ezpredator size: " + ezpredator.size());
-            textArea.appendText("\n" + "Ezpredator2 size: " + ezpredator2.size());
+            outputArea.appendText("\n" + "Eznasecomoyadnye size: " + eznasecomoyadnye.size());
+            outputArea.appendText("\n" + "Ezpredator size: " + ezpredator.size());
+            outputArea.appendText("\n" + "Ezpredator2 size: " + ezpredator2.size());
         });
 
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
-        vBox.getChildren().addAll(textArea, runButton, backButton);
+        outputArea.setStyle("-fx-control-inner-background:#000;" +
+                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+
+        vBox.getChildren().addAll(outputArea, runButton, backButton);
 
         return vBox;
     }

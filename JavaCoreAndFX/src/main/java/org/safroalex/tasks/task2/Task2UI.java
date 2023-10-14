@@ -48,6 +48,10 @@ public class Task2UI {
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
+        outputArea.setStyle("-fx-control-inner-background:#000;" +
+                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+
         vBox.getChildren().addAll(outputArea,
                 new Label("Select number of repetitions:"),
                 repeatComboBox, executeButton, outputArea2,

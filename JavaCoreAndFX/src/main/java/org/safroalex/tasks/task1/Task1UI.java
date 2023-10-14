@@ -98,6 +98,10 @@ public class Task1UI {
         BorderPane.setAlignment(backButton, Pos.BOTTOM_LEFT);
         BorderPane.setMargin(backButton, new Insets(12, 12, 12, 12));
 
+        outputArea.setStyle("-fx-control-inner-background:#000;" +
+                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+
         // Добавляем все элементы в VBox
         vBox.getChildren().addAll(outputArea,
                 strategyComboBox, coordinatesField, moveButton);

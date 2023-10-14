@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" afterDir="false" />
