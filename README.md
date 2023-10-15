@@ -21,7 +21,7 @@ This repository serves as a portfolio of projects implemented in Java. It covers
 - Maven
 - JavaFX
 - Javadoc
-- Jupiter
+- Jupyter
 
 ## Installation and Setup
 
@@ -38,7 +38,7 @@ Maven will help you.
 git clone https://github.com/yourusername/JavaCoreAndFXPortfolio.git
 
 # Navigate into the project directory
-cd JavaCoreAndFXPortfolio
+cd JavaCoreAndFX
 
 # Run the project using your IDE or the command line
 ```
