@@ -92,30 +92,28 @@ public class MainWindow {
 
     private void showTask2UI() {
         Task2UI task2UI = new Task2UI(this);
-        VBox task2VBox = task2UI.initialize();
+        BorderPane task2VBox = task2UI.initialize();
         mainLayout.setCenter(task2VBox);
 
     }
 
     private void showTask3UI() {
         Task3UI task3UI = new Task3UI(this);
-        VBox task3VBox = task3UI.initialize();
+        BorderPane task3VBox = task3UI.initialize();
         mainLayout.setCenter(task3VBox);
 
     }
 
     private void showTask4UI() {
         Task4UI task4UI = new Task4UI(this);
-        VBox task4VBox = task4UI.initialize();
+        BorderPane task4VBox = task4UI.initialize();
         mainLayout.setCenter(task4VBox);
-
     }
 
     private void showTask5UI() {
         Task5UI task5UI = new Task5UI(this);
-        VBox task5VBox = task5UI.initialize();
+        BorderPane task5VBox = task5UI.initialize();
         mainLayout.setCenter(task5VBox);
-
     }
 
     private void showTask6UI() {

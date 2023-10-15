@@ -23,7 +23,7 @@ public class Task5UI {
     public Task5UI(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
     }
-    public VBox initialize() {
+    public BorderPane initialize() {
         BorderPane borderPane = new BorderPane();
         VBox vBox = new VBox(10);
 
@@ -272,7 +272,8 @@ public class Task5UI {
 
         VBox scrollVBox = new VBox(scrollPane);
 
-        return scrollVBox;
+        borderPane.setCenter(scrollVBox);
+        return borderPane;
     }
 
     public Label createCustomLabel(String text, Color color) {

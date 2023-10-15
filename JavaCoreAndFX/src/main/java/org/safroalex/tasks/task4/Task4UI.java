@@ -2,11 +2,16 @@ package org.safroalex.tasks.task4;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task4.logic.TextTranslator;
 import org.safroalex.tasks.task4.logic.Utils;
 import org.safroalex.tasks.task4.logic.exceptions.InvalidFileFormatException;
@@ -27,9 +32,10 @@ public class Task4UI {
         this.mainWindow = mainWindow;
     }
 
-    public VBox initialize() {
+    public BorderPane initialize() {
         VBox task4VBox = new VBox();
 
+        BorderPane borderPane = new BorderPane();
         // TextArea для Drag-and-Drop словаря
         TextArea dictionaryArea = new TextArea();
         dictionaryArea.setPromptText("Перетащите сюда файл со словарем...");
@@ -93,7 +99,7 @@ public class Task4UI {
                         = Utils
                         .parseManualDictionary(manualDictionaryArea.getText());
                 dictionary.putAll(manualDictionary);
-                System.out.println("Manual dictionary loaded successfully.");
+                translatedTextArea.setText("Manual dictionary loaded successfully.");
             } catch (InvalidFileFormatException ex) {
                 ex.printStackTrace();
                 System.out.println("Failed to load manual dictionary:" +
@@ -101,7 +107,6 @@ public class Task4UI {
             }
         });
 
-        Label inputTextLabel = new Label("Введите текст для перевода:");
         TextArea englishTextArea = new TextArea();
         englishTextArea.setPromptText("Введи текст для перевода.");
         Button translateButton = new Button("Перевести");
@@ -122,15 +127,51 @@ public class Task4UI {
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
-        translatedTextArea.setStyle("-fx-control-inner-background:#000;" +
-                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+        VBox container1 = new VBox(manualDictionaryArea, loadManualDictionaryButton, dictionaryArea, englishTextArea);
+        VBox container2 = new VBox(translateButton, backButton, translatedTextArea);
+
+        container1.setSpacing(20);
+        container2.setSpacing(20);
+
+        // STYLES
+
+        manualDictionaryArea.setStyle("-fx-control-inner-background: #C0C0C0;");
+        manualDictionaryArea.setMaxHeight(100);
+        manualDictionaryArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+
+        dictionaryArea.setMaxHeight(100);
+        dictionaryArea.setStyle("-fx-control-inner-background: #C0C0C0;");
+        dictionaryArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+
+        englishTextArea.setMaxHeight(100);
+        englishTextArea.setStyle("-fx-control-inner-background: #C0C0C0;");
+        englishTextArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+
+        translatedTextArea.setStyle("-fx-control-inner-background:#000;"  +
                 " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        translatedTextArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
 
-        task4VBox.getChildren().addAll(manualDictionaryArea,
-                loadManualDictionaryButton, dictionaryArea,
-                inputTextLabel, englishTextArea,
-                translateButton, backButton, translatedTextArea);
+        loadManualDictionaryButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        loadManualDictionaryButton.setStyle("-fx-background-color: #00A676;");
 
-        return task4VBox;
+        translateButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        translateButton.setStyle("-fx-background-color: #00A676;");
+
+        backButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        backButton.setStyle("-fx-background-color: #3C91E6;");
+
+        task4VBox.setStyle("-fx-background-color: #000000;");
+
+        task4VBox.getChildren().addAll(container1, container2);
+
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(task4VBox);
+        scrollPane.setFitToWidth(true);
+
+        VBox scrollVBox= new VBox(scrollPane);
+
+        borderPane.setCenter(scrollVBox);
+
+        return borderPane;
     }
 }

@@ -1,21 +1,34 @@
 package org.safroalex.tasks.task2;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task2.logic.*;
+import javafx.scene.paint.Color;
+
+import java.awt.*;
 import java.lang.reflect.Method;
 
 import org.safroalex.ui.MainWindow;
 public class Task2UI {
     private TextArea outputArea;
     private TextArea outputArea2;
-    private MainWindow mainWindow;
+    private final MainWindow mainWindow;
 
     public Task2UI(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
     }
 
-    public VBox initialize() {
+    public BorderPane initialize() {
+
+        BorderPane borderPane = new BorderPane();
         VBox vBox = new VBox(10);
 
         outputArea = new TextArea();
@@ -23,6 +36,10 @@ public class Task2UI {
 
         outputArea2 = new TextArea();
         outputArea2.setEditable(false);
+
+        Label label = new Label("Select number of repetitions:");
+        label.setTextFill(Color.WHITE);
+        label.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
 
         ComboBox<String> repeatComboBox = new ComboBox<>();
         repeatComboBox.getItems().addAll("1", "2", "3", "4", "5");
@@ -48,16 +65,47 @@ public class Task2UI {
         Button backButton = new Button("Вернуться в главное меню");
         backButton.setOnAction(e -> mainWindow.showMainMenu());
 
-        outputArea.setStyle("-fx-control-inner-background:#000;" +
-                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
-                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        // STYLES
 
-        vBox.getChildren().addAll(outputArea,
-                new Label("Select number of repetitions:"),
+        outputArea.setStyle("-fx-control-inner-background:#000;"  +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        outputArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        outputArea.setMinHeight(300);
+        outputArea.setMinWidth(200);
+
+        outputArea2.setStyle("-fx-control-inner-background:#000;"  +
+                " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        outputArea2.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        outputArea2.setMinHeight(300);
+        outputArea2.setMinWidth(200);
+
+        executeButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButton.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButton, Pos.BOTTOM_LEFT);
+
+        executeButtonWithDefaults.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        executeButtonWithDefaults.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(executeButtonWithDefaults, Pos.BOTTOM_LEFT);
+
+        backButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        backButton.setStyle("-fx-background-color: #3C91E6;");
+        BorderPane.setAlignment(backButton, Pos.BOTTOM_LEFT);
+
+        vBox.setStyle("-fx-background-color: #000000;");
+
+        vBox.getChildren().addAll(outputArea, label,
                 repeatComboBox, executeButton, outputArea2,
                 executeButtonWithDefaults, backButton);
 
-        return vBox;
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(vBox);
+        scrollPane.setFitToWidth(true);
+
+        VBox scrollVbox = new VBox(scrollPane);
+
+        borderPane.setCenter(scrollVbox);
+
+        return borderPane;
     }
 
     private void executeAnnotatedMethods(int times) {

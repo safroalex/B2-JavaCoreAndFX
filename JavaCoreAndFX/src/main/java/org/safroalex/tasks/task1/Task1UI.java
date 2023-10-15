@@ -33,29 +33,19 @@ public class Task1UI {
         // Создаем текстовую область для вывода информации
         TextArea outputArea = new TextArea();
         outputArea.setEditable(false);
-        outputArea.setMinHeight(100);
-        outputArea.setMinWidth(200);
-        outputArea.setFont(Font.font("Verdana", FontWeight.NORMAL, 14));
-        outputArea.setEditable(false);  // Защищаем от редактирования
 
         // Создаем выпадающий список для выбора стратегии
         ComboBox<String> strategyComboBox = new ComboBox<>();
-        strategyComboBox.setMaxWidth(Double.MAX_VALUE);
         strategyComboBox.getItems().addAll("Angel", "Rocker", "SadMan");
         strategyComboBox.setStyle("-fx-font: 18px 'Serif';");
 
         // Создаем текстовое поле для ввода координат
         TextField coordinatesField = new TextField();
-        coordinatesField.setMaxWidth(Double.MAX_VALUE);
         coordinatesField.setPromptText("Введите координаты в формате: x,y,z");
-        coordinatesField.setFont(Font.font("Verdana", FontWeight.NORMAL, 18));
+
 
         // Добавляем кнопку для выполнения перемещения
         Button moveButton = new Button("Переместиться");
-        moveButton.setMaxWidth(Double.MAX_VALUE);
-        moveButton.setFont(Font.font("Verdana", FontWeight.BOLD, 18));
-        moveButton.setTextFill(Color.WHITE);
-        moveButton.setStyle("-fx-background-color: #4CAF50;");
         moveButton.setOnAction(e -> {
             if (strategyComboBox.getValue() == null
                     || strategyComboBox.getValue().isEmpty()) {
@@ -91,16 +81,27 @@ public class Task1UI {
 
         // Кнопка для возврата в главное меню
         Button backButton = new Button("Вернуться в главное меню");
-        backButton.setFont(Font.font("Verdana", FontWeight.BOLD, 18));
-        backButton.setTextFill(Color.WHITE);
-        backButton.setMaxWidth(Double.MAX_VALUE);
         backButton.setOnAction(e -> mainWindow.showMainMenu());
         BorderPane.setAlignment(backButton, Pos.BOTTOM_LEFT);
         BorderPane.setMargin(backButton, new Insets(12, 12, 12, 12));
 
-        outputArea.setStyle("-fx-control-inner-background:#000;" +
-                " -fx-font-family: Consolas; -fx-highlight-fill: dodgerblue;" +
+        // STYLES
+
+        outputArea.setStyle("-fx-control-inner-background:#000;"  +
                 " -fx-highlight-text-fill: white; -fx-text-fill: white;");
+        outputArea.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        outputArea.setMinHeight(300);
+        outputArea.setMinWidth(200);
+
+        coordinatesField.setStyle("-fx-background-color: #C0C0C0;");
+
+        moveButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        moveButton.setStyle("-fx-background-color: #00A676;");
+        BorderPane.setAlignment(moveButton, Pos.CENTER);
+
+        backButton.setFont(Font.font("Verdana", FontWeight.BOLD, 12));
+        backButton.setStyle("-fx-background-color: #3C91E6;");
+        BorderPane.setAlignment(backButton, Pos.BOTTOM_LEFT);
 
         // Добавляем все элементы в VBox
         vBox.getChildren().addAll(outputArea,
