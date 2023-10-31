@@ -33,15 +33,7 @@ To run most of the projects, you will need:
 
 Maven will help you.
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/JavaCoreAndFXPortfolio.git
-
-# Navigate into the project directory
-cd JavaCoreAndFX
-
-# Run the project using your IDE or the command line
-```
+To run the project, make sure you have Java, then clone the repository and run it with Maven.
 
 ## License
 
