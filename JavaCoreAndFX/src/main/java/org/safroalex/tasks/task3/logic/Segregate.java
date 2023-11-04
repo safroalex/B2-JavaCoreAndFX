@@ -3,19 +3,20 @@ package org.safroalex.tasks.task3.logic;
 import java.util.Collection;
 
 public class Segregate {
-    public <T extends Hierarchy.Chordate, U, V, W> void segregate(
-            Collection<T> src,
-            Collection<? super U> collection1,
-            Collection<? super V> collection2,
-            Collection<? super W> collection3) {
-
-        for (T animal : src) {
-            if (animal instanceof Hierarchy.Ezhovie) {
-                collection1.add((U) animal);
-            } else if (animal instanceof Hierarchy.Coshki) {
-                collection2.add((V) animal);
-            } else if (animal instanceof Hierarchy.Predator) {
-                collection3.add((W) animal);
+    static public <T1, T2, T3 extends Hierarchy.Chordate> void segregate
+            (Collection<? extends Hierarchy.Chordate> src,
+             Collection<? super Hierarchy.EzhStandart> collection1,
+             Collection<? super Hierarchy.Manul> collection2,
+             Collection<? super Hierarchy.Ryci> collection3) {
+        for (Hierarchy.Chordate animal : src) {
+            if (animal instanceof Hierarchy.EzhStandart) {
+                collection1.add((Hierarchy.EzhStandart) animal);
+            }
+            if (animal instanceof Hierarchy.Manul) {
+                collection2.add((Hierarchy.Manul) animal);
+            }
+            if (animal instanceof Hierarchy.Ryci) {
+                collection3.add((Hierarchy.Ryci) animal);
             }
         }
     }

@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/Task3UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/logic/Segregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task3/logic/Segregate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +47,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anon/YandexDisk/remoteWork/ПОЛИТЕХ/OOP/secondTry/Program.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/anon/GITREPOS/PERSONAL/B2-JavaCoreAndFX/JavaCoreAndFX&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -59,7 +56,7 @@
       <recent name="org.safroalex.tasks.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task6Main">
+  <component name="RunManager" selected="Application.Task3Main">
     <configuration name="Task1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.Task1Main" />
       <module name="JavaCoreAndFX" />
@@ -127,10 +124,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task3Main" />
         <item itemvalue="Application.Task6Main" />
         <item itemvalue="Application.Task1Main" />
         <item itemvalue="Application.Task2Main" />
-        <item itemvalue="Application.Task3Main" />
         <item itemvalue="Application.Task4Main" />
       </list>
     </recent_temporary>

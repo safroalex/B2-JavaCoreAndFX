@@ -12,8 +12,6 @@ public class Task3Main {
 
         // SegregateMlecopit
         Collection<Hierarchy.Mlecopit> mlecopit = Arrays.asList(
-                new Hierarchy.Coshki(),
-                new Hierarchy.Ezhovie(),
                 new Hierarchy.EzhStandart(),
                 new Hierarchy.Manul(),
                 new Hierarchy.Ryci()
@@ -23,13 +21,11 @@ public class Task3Main {
         Collection<Hierarchy.Coshki> mlcoshki = new ArrayList<>();
         Collection<Hierarchy.Predator> mlpredator = new ArrayList<>();
 
-        Segregate mlsegregate = new Segregate();
-        mlsegregate.segregate(mlecopit, mlezhovie, mlcoshki, mlpredator);
+        Segregate.segregate(mlecopit, mlezhovie, mlcoshki, mlpredator);
 
-        System.out.println("Mlezhovie size: " + mlezhovie.size());
-        System.out.println("Mlcoshki size: " + mlcoshki.size());
-        System.out.println("Mlpredator size: " + mlpredator.size());
-
+        System.out.println("ezhovie size: " + mlezhovie.size());
+        System.out.println("coshki size: " + mlcoshki.size());
+        System.out.println("predator size: " + mlpredator.size());
 
         //SegregatePredator
         Collection<Hierarchy.Predator> predator = Arrays.asList(
@@ -42,33 +38,28 @@ public class Task3Main {
         Collection<Hierarchy.Manul> prmanul = new ArrayList<>();
         Collection<Hierarchy.Coshki> prcoshki = new ArrayList<>();
 
-        Segregate prsegregate = new Segregate();
-        prsegregate.segregate(predator, prchordate, prmanul, prcoshki);
+        Segregate.segregate(predator, prchordate, prmanul, prcoshki);
 
-        System.out.println("Prchordate size: " + prchordate.size());
-        System.out.println("Prmanul size: " + prmanul.size());
-        System.out.println("Prcoshki size: " + prcoshki.size());
-
+        System.out.println("chordate size: " + prchordate.size());
+        System.out.println("manul size: " + prmanul.size());
+        System.out.println("coshki size: " + prcoshki.size());
 
         //SegregateEzhovie
         Collection<Hierarchy.Ezhovie> ezhovie = Arrays.asList(
-                new Hierarchy.Ezhovie(),
                 new Hierarchy.EzhStandart(),
                 new Hierarchy.EzhStandart()
         );
 
-        Collection<Hierarchy.Nasecomoyadnye> eznasecomoyadnye
+        Collection<Hierarchy.Nasecomoyadnye> ezezhovie
                 = new ArrayList<>();
         Collection<Hierarchy.Predator> ezpredator = new ArrayList<>();
         Collection<Hierarchy.Predator> ezpredator2 = new ArrayList<>();
 
-        Segregate ezsegregate = new Segregate();
-        ezsegregate
-                .segregate(ezhovie, eznasecomoyadnye, ezpredator, ezpredator2);
+        Segregate.segregate(ezhovie, ezezhovie, ezpredator, ezpredator2);
 
-        System.out.println("Eznasecomoyadnye size: " + eznasecomoyadnye.size());
-        System.out.println("Ezpredator size: " + ezpredator.size());
-        System.out.println("Ezpredator2 size: " + ezpredator2.size());
+        System.out.println("nasecomoyadnye size: " + ezezhovie.size());
+        System.out.println("predator size: " + ezpredator.size());
+        System.out.println("predator2 size: " + ezpredator2.size());
     }
 
 

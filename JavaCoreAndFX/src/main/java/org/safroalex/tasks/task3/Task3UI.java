@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 public class Task3UI {
-    private MainWindow mainWindow;
+    private final MainWindow mainWindow;
 
     public Task3UI(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
@@ -37,8 +37,6 @@ public class Task3UI {
         runButton.setOnAction(e -> {
             // SegregateMlecopit
             Collection<Hierarchy.Mlecopit> mlecopit = Arrays.asList(
-                    new Hierarchy.Coshki(),
-                    new Hierarchy.Ezhovie(),
                     new Hierarchy.EzhStandart(),
                     new Hierarchy.Manul(),
                     new Hierarchy.Ryci()
@@ -48,8 +46,7 @@ public class Task3UI {
             Collection<Hierarchy.Coshki> mlcoshki = new ArrayList<>();
             Collection<Hierarchy.Predator> mlpredator = new ArrayList<>();
 
-            Segregate mlsegregate = new Segregate();
-            mlsegregate.segregate(mlecopit, mlezhovie, mlcoshki, mlpredator);
+            Segregate.segregate(mlecopit, mlezhovie, mlcoshki, mlpredator);
 
             outputArea.setText("Mlezhovie size: " + mlezhovie.size());
             outputArea.appendText("\n" + "Mlcoshki size: " + mlcoshki.size());
@@ -67,8 +64,7 @@ public class Task3UI {
             Collection<Hierarchy.Manul> prmanul = new ArrayList<>();
             Collection<Hierarchy.Coshki> prcoshki = new ArrayList<>();
 
-            Segregate prsegregate = new Segregate();
-            prsegregate.segregate(predator, prchordate, prmanul, prcoshki);
+            Segregate.segregate(predator, prchordate, prmanul, prcoshki);
 
             outputArea.appendText("\n" + "Prchordate size: " + prchordate.size());
             outputArea.appendText("\n" + "Prmanul size: " + prmanul.size());
@@ -77,21 +73,18 @@ public class Task3UI {
 
             //SegregateEzhovie
             Collection<Hierarchy.Ezhovie> ezhovie = Arrays.asList(
-                    new Hierarchy.Ezhovie(),
                     new Hierarchy.EzhStandart(),
                     new Hierarchy.EzhStandart()
             );
 
-            Collection<Hierarchy.Nasecomoyadnye> eznasecomoyadnye
+            Collection<Hierarchy.Nasecomoyadnye> ezezhovie
                     = new ArrayList<>();
             Collection<Hierarchy.Predator> ezpredator = new ArrayList<>();
             Collection<Hierarchy.Predator> ezpredator2 = new ArrayList<>();
 
-            Segregate ezsegregate = new Segregate();
-            ezsegregate
-                    .segregate(ezhovie, eznasecomoyadnye, ezpredator, ezpredator2);
+            Segregate.segregate(ezhovie, ezezhovie, ezpredator, ezpredator2);
 
-            outputArea.appendText("\n" + "Eznasecomoyadnye size: " + eznasecomoyadnye.size());
+            outputArea.appendText("\n" + "Eznasecomoyadnye size: " + ezezhovie.size());
             outputArea.appendText("\n" + "Ezpredator size: " + ezpredator.size());
             outputArea.appendText("\n" + "Ezpredator2 size: " + ezpredator2.size());
         });
