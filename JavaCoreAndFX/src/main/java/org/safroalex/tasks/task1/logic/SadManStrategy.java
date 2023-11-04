@@ -7,12 +7,12 @@ public class SadManStrategy implements MoveStrategy {
     @Override
     public String move(Point a, Point b) {
         // Рассчитываем разницу высот
-        double altitudeDifference = b.getZ() - a.getZ();
+        double altitudeDifference = b.z() - a.z();
 
         // Рассчитываем расстояние для ходьбы на плоскости xy
         double walkDistance = Point.getDistance(
-                new Point(a.getX(), a.getY(), 0),
-                new Point(b.getX(), b.getY(), 0));
+                new Point(a.x(), a.y(), 0),
+                new Point(b.x(), b.y(), 0));
 
         // Проверяем, не пытаемся ли мы лететь
         if (altitudeDifference > 0) {
@@ -30,13 +30,10 @@ public class SadManStrategy implements MoveStrategy {
 
     @Override
     public String errorMessage(int errorCode) {
-        switch (errorCode) {
-            case ERROR_FLYING:
-                return "Невозможно лететь.";
-            case ERROR_WALKING:
-                return "Невозможно идти.";
-            default:
-                return "Неизвестная ошибка.";
-        }
+        return switch (errorCode) {
+            case ERROR_FLYING -> "Невозможно лететь.";
+            case ERROR_WALKING -> "Невозможно идти.";
+            default -> "Неизвестная ошибка.";
+        };
     }
 }

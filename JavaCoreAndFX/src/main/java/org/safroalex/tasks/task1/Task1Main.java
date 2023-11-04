@@ -10,18 +10,17 @@ public class Task1Main {
         Scanner scanner = new Scanner(System.in);
 
         // Вывести предупреждения о разных типах перемещения
-        System.out.println(
-                "Movement types and their restrictions:");
-        System.out.println(
-                "Angel: Can fly but not too high, cannot walk, cannot dig.");
-        System.out.println(
-                "Rocker: Can walk but not too far," +
-                        " can fly but not too high, cannot dig.");
-        System.out.println("SadMan: Cannot walk," +
-                " cannot fly, can dig infinitely.");
+        String movementInfo = """
+                Movement types and their restrictions:
+                Angel: Can fly but not too high, cannot walk, cannot dig.
+                Rocker: Can walk but not too far, can fly but not too high, cannot dig.
+                SadMan: Cannot walk, cannot fly, can dig infinitely.""";
+
+        System.out.println(movementInfo);
+
 
         // Создать Hero с выбранным типом движения
-        String moveType = "";
+        String moveType;
         while (true) {
             System.out.println("Enter movement type " +
                     "(Angel, Rocker, SadMan): ");
@@ -43,9 +42,9 @@ public class Task1Main {
 
         String continueMoving = "y";
         while (continueMoving.equalsIgnoreCase("y")) {
-            double x = 0;
-            double y = 0;
-            double z = 0;
+            double x;
+            double y;
+            double z;
             try {
                 // Получить координаты для перемещения
                 System.out.println("Enter x coordinate: ");

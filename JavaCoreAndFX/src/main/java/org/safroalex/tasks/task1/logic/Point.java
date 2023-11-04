@@ -2,48 +2,16 @@ package org.safroalex.tasks.task1.logic;
 
 import java.lang.Math;
 
-public class Point {
-    private double x;
-    private double y;
-    private double z;
-
-    public Point(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
+public record Point(double x, double y, double z) {
 
     public static double getDistance(Point A, Point B) {
-        return Math.sqrt(Math.pow(A.getX() - B.getX(), 2)
-                + Math.pow(A.getY() - B.getY(), 2)
-                + Math.pow(A.getZ() - B.getZ(), 2));
+        return Math.sqrt(Math.pow(A.x() - B.x(), 2)
+                + Math.pow(A.y() - B.y(), 2)
+                + Math.pow(A.z() - B.z(), 2));
     }
 
     public String getCoordinatesMessage() {
         return x + ":" + y + ":" + z;
     }
 
-    public double getX() {
-        return x;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
-
-    public double getZ() {
-        return z;
-    }
-
-    public void setZ(double z) {
-        this.z = z;
-    }
 }

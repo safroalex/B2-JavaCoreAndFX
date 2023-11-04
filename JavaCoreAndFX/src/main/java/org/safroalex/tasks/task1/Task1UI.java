@@ -11,7 +11,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task1.logic.*;
-import javafx.scene.paint.Color;
 
 import org.safroalex.ui.MainWindow;
 
