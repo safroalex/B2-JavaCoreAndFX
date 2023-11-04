@@ -67,10 +67,22 @@ public class Task1Main {
 
             // Спросить, хочет ли пользователь продолжить
             System.out.println("Do you want to continue moving? (y/n): ");
-            continueMoving = scanner.next();
-            scanner.nextLine();  // очистить буфер
+            scanner.nextLine();  // Исправлено здесь
+            while (true) {
+                try {
+                    continueMoving = scanner.nextLine();
+                    if (continueMoving.equalsIgnoreCase("y")
+                            || continueMoving.equalsIgnoreCase("n")) {
+                        break;
+                    } else {
+                        System.out.println("Invalid type. Try again.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Try again.");
+                    scanner.next();
+                }
+            }
         }
-
         scanner.close();
     }
 }
