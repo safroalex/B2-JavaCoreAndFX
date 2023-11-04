@@ -25,7 +25,7 @@ public class MainWindow {
 
     // Создаем BorderPane как основной макет
     BorderPane mainLayout = new BorderPane();
-    private Label polytechLabel;
+    private final Label polytechLabel;
     private VBox menu;
 
     public MainWindow() {
@@ -87,21 +87,18 @@ public class MainWindow {
         Task1UI task1UI = new Task1UI(this);
         BorderPane task1VBox = task1UI.initialize();
         mainLayout.setCenter(task1VBox);
-
     }
 
     private void showTask2UI() {
         Task2UI task2UI = new Task2UI(this);
         BorderPane task2VBox = task2UI.initialize();
         mainLayout.setCenter(task2VBox);
-
     }
 
     private void showTask3UI() {
         Task3UI task3UI = new Task3UI(this);
         BorderPane task3VBox = task3UI.initialize();
         mainLayout.setCenter(task3VBox);
-
     }
 
     private void showTask4UI() {

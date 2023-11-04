@@ -17,14 +17,11 @@ public class Task2Main {
                 for (int i = 0; i < times; i++) {
                     try {
                         // Передаем параметры в зависимости от метода
-                        if (method.getName().equals("protectedMethodWithInt")) {
-                            method.invoke(obj, 1);
-                        } else if (method.getName().equals("protectedMethodWithDouble")) {
-                            method.invoke(obj, 1.0);
-                        } else if (method.getName().equals("privateMethodWithString")) {
-                            method.invoke(obj, "test");
-                        } else if (method.getName().equals("privateMethodWithClass")) {
-                            method.invoke(obj, AnnotatedClass.class);
+                        switch (method.getName()) {
+                            case "protectedMethodWithInt" -> method.invoke(obj, 1);
+                            case "protectedMethodWithDouble" -> method.invoke(obj, 1.0);
+                            case "privateMethodWithString" -> method.invoke(obj, "test");
+                            case "privateMethodWithClass" -> method.invoke(obj, AnnotatedClass.class);
                         }
                     } catch (Exception e) {
                         e.printStackTrace();

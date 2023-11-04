@@ -1,15 +1,12 @@
 package org.safroalex.tasks.task4;
 
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
-import javafx.scene.input.DragEvent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task4.logic.TextTranslator;
@@ -25,7 +22,7 @@ import java.util.Map;
 
 
 public class Task4UI {
-    private Map<String, String> dictionary = new HashMap<>();
+    private final Map<String, String> dictionary = new HashMap<>();
     private final MainWindow mainWindow;
 
     public Task4UI(MainWindow mainWindow) {

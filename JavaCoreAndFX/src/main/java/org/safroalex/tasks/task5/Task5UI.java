@@ -16,7 +16,7 @@ import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 public class Task5UI {
-    private TextArea outputArea = new TextArea();;
+    private final TextArea outputArea = new TextArea();
 
     private final MainWindow mainWindow;
 

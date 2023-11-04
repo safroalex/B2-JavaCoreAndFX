@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/Task1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/exceptions/FileWriteException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -54,7 +62,7 @@
       <recent name="org.safroalex.tasks.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task1Main">
+  <component name="RunManager" selected="JUnit.tasks in JavaCoreAndFX">
     <configuration name="Task1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.Task1Main" />
       <module name="JavaCoreAndFX" />
@@ -68,46 +76,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AngelStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task2.Task2Main" />
       <module name="JavaCoreAndFX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.safroalex.tasks.task1.*" />
+          <option name="PATTERN" value="org.safroalex.tasks.task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.safroalex.tasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.AngelStrategyTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockerStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCoreAndFX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.safroalex.tasks.task1.*" />
+          <option name="PATTERN" value="org.safroalex.tasks.task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.safroalex.tasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.RockerStrategyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SadManStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCoreAndFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.safroalex.tasks.task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.safroalex.tasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.SadManStrategyTest" />
+      <option name="PACKAGE_NAME" value="org.safroalex.tasks.task4" />
+      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task4.TextTranslatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,13 +112,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tasks in JavaCoreAndFX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaCoreAndFX" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/safroalex/tasks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.tasks in JavaCoreAndFX" />
+        <item itemvalue="JUnit.TextTranslatorTest" />
+        <item itemvalue="Application.Task2Main" />
         <item itemvalue="Application.Task1Main" />
         <item itemvalue="JUnit.task1 in JavaCoreAndFX" />
-        <item itemvalue="JUnit.SadManStrategyTest" />
-        <item itemvalue="JUnit.RockerStrategyTest" />
-        <item itemvalue="JUnit.AngelStrategyTest" />
       </list>
     </recent_temporary>
   </component>

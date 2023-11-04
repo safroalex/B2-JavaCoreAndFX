@@ -13,7 +13,6 @@ import javafx.scene.text.FontWeight;
 import org.safroalex.tasks.task2.logic.*;
 import javafx.scene.paint.Color;
 
-import java.awt.*;
 import java.lang.reflect.Method;
 
 import org.safroalex.ui.MainWindow;
@@ -117,17 +116,14 @@ public class Task2UI {
                 method.setAccessible(true);
                 for (int i = 0; i < times; i++) {
                     try {
-                        String output = "";
-                        // Вызов методов по условиям (примерно как в вашем Main)
-                        if (method.getName().equals("protectedMethodWithInt")) {
-                            output = (String) method.invoke(obj, 1);
-                        } else if (method.getName().equals("protectedMethodWithDouble")) {
-                            output = (String) method.invoke(obj, 1.0);
-                        } else if (method.getName().equals("privateMethodWithString")) {
-                            output = (String) method.invoke(obj, "test");
-                        } else if (method.getName().equals("privateMethodWithClass")) {
-                            output = (String) method.invoke(obj, AntdClassForUIWoutNumber.class);
-                        }
+                        String output = switch (method.getName()) {
+                            case "protectedMethodWithInt" -> (String) method.invoke(obj, 1);
+                            case "protectedMethodWithDouble" -> (String) method.invoke(obj, 1.0);
+                            case "privateMethodWithString" -> (String) method.invoke(obj, "test");
+                            case "privateMethodWithClass" ->
+                                    (String) method.invoke(obj, AntdClassForUIWoutNumber.class);
+                            default -> "";
+                        };
 
                         // Вывод в TextArea
                         outputArea.appendText(output + "\n");
