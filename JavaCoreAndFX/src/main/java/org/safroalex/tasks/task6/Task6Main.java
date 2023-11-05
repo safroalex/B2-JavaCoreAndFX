@@ -1,6 +1,5 @@
 package org.safroalex.tasks.task6;
 
-import org.safroalex.tasks.task6.logic.*;
 import org.safroalex.tasks.task6.logic.Process;
 
 public class Task6Main {

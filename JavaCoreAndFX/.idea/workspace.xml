@@ -6,11 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="27556755-0e27-4c65-bb97-578a70175232" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/root/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/root/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/AngelStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/AngelStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/MoveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/MoveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/RockerStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/RockerStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/SadManStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task1/logic/SadManStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task2/Task2UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/Task4UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task4/logic/exceptions/FileWriteException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task5/Task5UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/Task6Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/tasks/task6/logic/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safroalex/ui/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +69,7 @@
       <recent name="org.safroalex.tasks.task4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.tasks in JavaCoreAndFX">
+  <component name="RunManager" selected="Application.Task4Main">
     <configuration name="Task1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task1.Task1Main" />
       <module name="JavaCoreAndFX" />
@@ -89,6 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task4Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.safroalex.tasks.task4.Task4Main" />
+      <module name="JavaCoreAndFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.safroalex.tasks.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TextTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCoreAndFX" />
       <extension name="coverage">
@@ -104,14 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="task1 in JavaCoreAndFX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCoreAndFX" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/org/safroalex/tasks/task1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="tasks in JavaCoreAndFX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCoreAndFX" />
       <option name="TEST_OBJECT" value="directory" />
@@ -122,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task4Main" />
         <item itemvalue="JUnit.tasks in JavaCoreAndFX" />
         <item itemvalue="JUnit.TextTranslatorTest" />
         <item itemvalue="Application.Task2Main" />
         <item itemvalue="Application.Task1Main" />
-        <item itemvalue="JUnit.task1 in JavaCoreAndFX" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +152,17 @@
       <updated>1696783970045</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
