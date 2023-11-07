@@ -3,8 +3,9 @@ package org.safroalex.tasks.task2.logic;
 public class AntdClassForUIWoutNumber {
 
     // Простейший публичный метод
+    @Repeat
     public String simplePublicMethod() {
-        return "This is a simple public method.";
+        return "This is a simple public method.   s";
     }
 
     // Защищенные методы с аннотациями и одним параметром

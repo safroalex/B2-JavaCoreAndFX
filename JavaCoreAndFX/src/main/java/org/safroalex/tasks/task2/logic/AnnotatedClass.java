@@ -9,6 +9,7 @@ public class AnnotatedClass {
     /**
      * Простой публичный метод без параметров и аннотаций.
      */
+    @Repeat(times = 1)
     public void simplePublicMethod() {
         System.out.println("This is a simple public method.");
     }

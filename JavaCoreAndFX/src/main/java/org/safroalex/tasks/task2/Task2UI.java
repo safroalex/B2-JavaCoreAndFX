@@ -116,18 +116,18 @@ public class Task2UI {
                 method.setAccessible(true);
                 for (int i = 0; i < times; i++) {
                     try {
-                        String output = switch (method.getName()) {
-                            case "protectedMethodWithInt" -> (String) method.invoke(obj, 1);
-                            case "protectedMethodWithDouble" -> (String) method.invoke(obj, 1.0);
-                            case "privateMethodWithString" -> (String) method.invoke(obj, "test");
-                            case "privateMethodWithClass" ->
-                                    (String) method.invoke(obj, AntdClassForUIWoutNumber.class);
-                            default -> "";
-                        };
+                        if (method.getModifiers() % 2 == 0) {
+                            String output = switch (method.getName()) {
+                                case "protectedMethodWithInt" -> (String) method.invoke(obj, 1);
+                                case "protectedMethodWithDouble" -> (String) method.invoke(obj, 1.0);
+                                case "privateMethodWithString" -> (String) method.invoke(obj, "test");
+                                case "privateMethodWithClass" -> (String) method.invoke(obj, AntdClassForUIWoutNumber.class);
+                                default -> "";
+                            };
 
-                        // Вывод в TextArea
-                        outputArea.appendText(output + "\n");
-
+                            // Вывод в TextArea
+                            outputArea.appendText(output + "\n");
+                        }
                     } catch (Exception e) {
                         outputArea.appendText("An error occurred: " + e.getMessage() + "\n");
                     }
@@ -154,26 +154,28 @@ public class Task2UI {
                 method.setAccessible(true);
                 for (int i = 0; i < times; i++) {
                     try {
-                        Object output;
-                        // Вызов методов по условиям с использованием
-                        // Reflection API для сравнения типов параметров
-                        Class<?>[] paramTypes = method.getParameterTypes();
-                        if (paramTypes.length > 0) {
-                            if (paramTypes[0] == int.class) {
-                                output = method.invoke(obj, 1);
-                            } else if (paramTypes[0] == double.class) {
-                                output = method.invoke(obj, 1.0);
-                            } else if (paramTypes[0] == String.class) {
-                                output = method.invoke(obj, "test");
-                            } else if (paramTypes[0] == Class.class) {
-                                output = method.invoke(obj, AntdClassForUIWithNumber.class);
+                        if (method.getModifiers() % 2 == 0) {
+                            Object output;
+                            // Вызов методов по условиям с использованием
+                            // Reflection API для сравнения типов параметров
+                            Class<?>[] paramTypes = method.getParameterTypes();
+                            if (paramTypes.length > 0) {
+                                if (paramTypes[0] == int.class) {
+                                    output = method.invoke(obj, 1);
+                                } else if (paramTypes[0] == double.class) {
+                                    output = method.invoke(obj, 1.0);
+                                } else if (paramTypes[0] == String.class) {
+                                    output = method.invoke(obj, "test");
+                                } else if (paramTypes[0] == Class.class) {
+                                    output = method.invoke(obj, AntdClassForUIWithNumber.class);
+                                } else {
+                                    output = "Unsupported parameter type";
+                                }
                             } else {
-                                output = "Unsupported parameter type";
+                                output = method.invoke(obj);  // Для методов без параметров
                             }
-                        } else {
-                            output = method.invoke(obj);  // Для методов без параметров
+                            outputArea.appendText(output + "\n");
                         }
-                        outputArea.appendText(output + "\n");
                     } catch (Exception e) {
                         outputArea.appendText("An error occurred: " + e.getMessage() + "\n");
                     }

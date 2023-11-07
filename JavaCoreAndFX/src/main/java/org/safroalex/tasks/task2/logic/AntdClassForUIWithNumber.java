@@ -3,6 +3,7 @@ package org.safroalex.tasks.task2.logic;
 public class AntdClassForUIWithNumber {
 
     // Простейший публичный метод
+    @Repeat(times = 1)
     public String simplePublicMethod() {
         return "This is a simple public method.";
     }
